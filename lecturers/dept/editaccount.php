@@ -27,20 +27,20 @@
             include "../classes/login.classes.php";
             include "../classes/login-contr.php";
 
-        if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["timetable_id"])) {
-            $timetable_id = $_GET["timetable_id"];
-            $sql = "SELECT * FROM timetable WHERE timetable_id = $timetable_id";
+        if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["course_id"])) {
+            $course_id = $_GET["course_id"];
+            $sql = "SELECT * FROM accountingtable  WHERE course_id = $course_id";
             $result = $connection->query($sql);
             if ($result && $result->num_rows > 0) {
                 $row = $result->fetch_assoc();
         ?>
 
-        <form action="../includes/editcomputer.inc.php" method="post">
+        <form action="../includes/editaccount.inc.php" method="post">
                         
-             <input type="hidden" name="timetable_id" value="<?php echo $row['timetable_id']; ?>">
+             <input type="hidden" name="course_id" value="<?php echo $row['course_id']; ?>">
 
                  
-                  <input type="hidden" name="timetable_id" value="<?php echo $row['timetable_id']; ?>">
+                  <input type="hidden" name="course_id" value="<?php echo $row['course_id']; ?>">
                 <label for="">Course Name</label>
                 <input type="text" class="form-control" name="course_name" value="<?php echo $row['course_name']; ?>" required>
                 

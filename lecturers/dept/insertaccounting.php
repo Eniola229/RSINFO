@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> RSINFO| Create New TimeTable</title>
-</head>
-<body>
-    <h2>Add Timetable For Computer Science</h2>
-    <form action="../includes/processTimetablecomputer.inc.php" method="post">
+</head>Accounting</h2>
+    <form action="../includes/accountingProccessTable.inc.php" method="post">
         <label for="course">Course Name:</label>
         <input type="text" name="course_name" required>
 
@@ -17,7 +15,7 @@
         <label for="dept_name">Department Name:</label>
         <select name="dept_name" required>
             <option name="General">General</option>
-                <option value="Computer Science">Computer Science</option>
+                <option value="Accountancy">Accountancy</option>
         </select>
         <label>Level</label>
         <select name="level_r" required>

@@ -18,7 +18,7 @@ $time_start = htmlspecialchars($_POST['time_start']);
 $time_end = htmlspecialchars($_POST['time_end']);
 
 // Insert data into the timetable table
-$query = "INSERT INTO timetable (course_name, course_code, dept_name, level_r, teacher_name, day_of_week, time_start, time_end)
+$query = "INSERT INTO accountingtable (course_name, course_code, dept_name, level_r, teacher_name, day_of_week, time_start, time_end)
           VALUES ('$course_name', '$course_code', '$dept_name', '$level_r', '$teacher_name', '$day_of_week', '$time_start', '$time_end')";
 
 if ($mysqli->query($query) === TRUE) {

@@ -38,7 +38,7 @@ include "classes/login-contr.classes.php";
 	        include "studentsdept/comstudents.php";
 	        break;
 	    case "Accountancy":
-	        echo "<h1>Accountancy</h1>";
+	         include "studentsdept/Accounting.php";
 	        break;
 	    case "Business Administration and Management":
 	        echo "<h1>Business Administration and Management</h1>";

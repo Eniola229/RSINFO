@@ -18,7 +18,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Computer Science | RSINFO</title>
+	<title>Accounting | RSINFO</title>
 </head>
 <body>
 	<div>
@@ -28,7 +28,7 @@ switch ($_SESSION['lvl']) {
     case "ND2":
     case "HND1":
     case "HND2":
-        $sql = "SELECT * FROM timetable WHERE level_r = '{$_SESSION['lvl']}'";
+        $sql = "SELECT * FROM accountingtable WHERE level_r = '{$_SESSION['lvl']}'";
         $result = $connection->query($sql);
 
         if (!$result) {

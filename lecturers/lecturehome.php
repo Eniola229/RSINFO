@@ -31,10 +31,10 @@ include "classes/login-contr.php";
 	<?php
     switch ($_SESSION['dept']) {
         case "Computer Science":
-            include "dept/computerscience.php"; // Make sure to include the correct file path and extension
+            include "dept/computerscience.php"; 
             break;
         case "Accountancy":
-            echo "<h1>Accountancy</h1>";
+             include "dept/accounting.php"; 
             break;
         case "Business Administration and Management":
             echo "<h1>Business Administration and Management</h1>";
