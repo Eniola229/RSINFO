@@ -32,6 +32,7 @@ include "classes/login-contr.classes.php";
 		<button>Notifications</button>
 	</a>
 
+
 	<?php
 	switch ($_SESSION['course']) {
 	    case "Computer Science":

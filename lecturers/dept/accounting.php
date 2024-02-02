@@ -40,9 +40,6 @@
 			<div>
 				<h2>Department TimeTable</h2>
 			</div>
-			<div>
-				<h2>ND1</h2>
-			</div>
 			  <table class="table">
           <thead>
             <tr>

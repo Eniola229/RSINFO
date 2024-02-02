@@ -21,6 +21,11 @@
 	<title>Computer Science | RSINFO</title>
 </head>
 <body>
+        <div>
+        <?php
+            include "AssCom.php";
+        ?>
+    </div>
 	<div>
 	<?php
 switch ($_SESSION['lvl']) {
